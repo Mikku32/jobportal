@@ -8,12 +8,12 @@ const HomePage = async () => {
   const jobs: Job[] = await fetch("https://job.kunjappu.online/api/portal-jobs").then((res) => res.json()
   );
   return (
-    <div className='flex flex-col '>
+    <div className='flex flex-col fixed '>
 
       <NavBar />
       <Search job={jobs[1]} />
       <div className='flex flex-row mt-5 justify-between px-2 h-screen'>
-        <div className=' w-[35%] h-full overflow-y-scroll '>
+        <div className=' w-[35%] h-full overflow-y-scroll px-3 '>
           {jobs.map((job) => (
             <JobCard key={job.id} job={job} />
           ))}

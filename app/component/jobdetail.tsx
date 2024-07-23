@@ -46,7 +46,25 @@ const JobDetail = ({ job }: { job: Job }) => {
                     <h1 className='font-semibold text-xl'>{job.title}</h1>
                     <h1 className=' py-3 mb-9 font-sans'>{job.description}</h1>
                     <hr />
-
+                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ullam, omnis ad porro aliquam voluptatum repellat amet animi molestiae ipsum aliquid hic dolores neque iste laborum at, repudiandae soluta sint?</h1>
+                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ullam, omnis ad porro aliquam voluptatum repellat amet animi molestiae ipsum aliquid hic dolores neque iste laborum at, repudiandae soluta sint?</h1>
+                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ullam, omnis ad porro aliquam voluptatum repellat amet animi molestiae ipsum aliquid hic dolores neque iste laborum at, repudiandae soluta sint?</h1>
+                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ullam, omnis ad porro aliquam voluptatum repellat amet animi molestiae ipsum aliquid hic dolores neque iste laborum at, repudiandae soluta sint?</h1>
+                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ullam, omnis ad porro aliquam voluptatum repellat amet animi molestiae ipsum aliquid hic dolores neque iste laborum at, repudiandae soluta sint?</h1>
+                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ullam, omnis ad porro aliquam voluptatum repellat amet animi molestiae ipsum aliquid hic dolores neque iste laborum at, repudiandae soluta sint?</h1>
+                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ullam, omnis ad porro aliquam voluptatum repellat amet animi molestiae ipsum aliquid hic dolores neque iste laborum at, repudiandae soluta sint?</h1>
+                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ullam, omnis ad porro aliquam voluptatum repellat amet animi molestiae ipsum aliquid hic dolores neque iste laborum at, repudiandae soluta sint?</h1>
+                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ullam, omnis ad porro aliquam voluptatum repellat amet animi molestiae ipsum aliquid hic dolores neque iste laborum at, repudiandae soluta sint?</h1>
+                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ullam, omnis ad porro aliquam voluptatum repellat amet animi molestiae ipsum aliquid hic dolores neque iste laborum at, repudiandae soluta sint?</h1>
+                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ullam, omnis ad porro aliquam voluptatum repellat amet animi molestiae ipsum aliquid hic dolores neque iste laborum at, repudiandae soluta sint?</h1>
+                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ullam, omnis ad porro aliquam voluptatum repellat amet animi molestiae ipsum aliquid hic dolores neque iste laborum at, repudiandae soluta sint?</h1>
+                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ullam, omnis ad porro aliquam voluptatum repellat amet animi molestiae ipsum aliquid hic dolores neque iste laborum at, repudiandae soluta sint?</h1>
+                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ullam, omnis ad porro aliquam voluptatum repellat amet animi molestiae ipsum aliquid hic dolores neque iste laborum at, repudiandae soluta sint?</h1>
+                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ullam, omnis ad porro aliquam voluptatum repellat amet animi molestiae ipsum aliquid hic dolores neque iste laborum at, repudiandae soluta sint?</h1>
+                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ullam, omnis ad porro aliquam voluptatum repellat amet animi molestiae ipsum aliquid hic dolores neque iste laborum at, repudiandae soluta sint?</h1>
+                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ullam, omnis ad porro aliquam voluptatum repellat amet animi molestiae ipsum aliquid hic dolores neque iste laborum at, repudiandae soluta sint?</h1>
+                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ullam, omnis ad porro aliquam voluptatum repellat amet animi molestiae ipsum aliquid hic dolores neque iste laborum at, repudiandae soluta sint?</h1>
+                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ullam, omnis ad porro aliquam voluptatum repellat amet animi molestiae ipsum aliquid hic dolores neque iste laborum at, repudiandae soluta sint?</h1>
 
                 </div>
 

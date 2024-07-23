@@ -9,7 +9,7 @@ const NavBar = () => {
     return (
         <div className='flex flex-row w-full justify-between items-center h-16 border border-b-1 px-7 py-4'>
             <Image src={glassdoor} alt='' className='h-20 w-28' />
-            <div className='flex flex-row gap-4'>
+            <div className='flex flex-row gap-4 text-sm'>
                 <div className='py-3 font-semibold border-b-4 border-b-white hover:font-bold hover:border-green-500'>Community</div>
                 <div className='py-3 font-semibold border-b-4 border-b-white hover:font-bold hover:border-green-500'>Jobs</div>
                 <div className='py-3 font-semibold border-b-4 border-b-white hover:font-bold hover:border-green-500'>Companies</div>

@@ -11,9 +11,9 @@ const HomePage = async () => {
     <div className='flex flex-col '>
 
       <NavBar />
-      <Search />
-      <div className='flex flex-row mt-5 justify-between px-2'>
-        <div className=' w-[35%]'>
+      <Search job={jobs[1]} />
+      <div className='flex flex-row mt-5 justify-between px-2 h-screen'>
+        <div className=' w-[35%] h-full overflow-y-scroll '>
           {jobs.map((job) => (
             <JobCard key={job.id} job={job} />
           ))}

@@ -1,44 +1,53 @@
+"use client"
+
+import { useRouter } from 'next/navigation'
 import React from 'react'
 
+
 const LoginPage = () => {
+
+    const router = useRouter()
     return (
         <div className='flex flex-col justify-center items-center bg-gray-700 h-screen'>
             <div className='flex flex-col gap-3 p-4 border-1 rounded-md mt-4 w-[40%] shadow-sm shadow-slate-50 bg-gray-900'>
                 <form
                     className="flex flex-col gap-2 p-4"
                     id="login"
-                //   onSubmit={async (e) => {
-                //     e.preventDefault();
-                //     const title = e.target.title.value;
-                //     const content = e.target.content.value;
-                //     const author = e.target.author.value;
+                    onSubmit={async (e) => {
+                        e.preventDefault();
+                        const email = e.target.email.value;
+                        const password = e.target.password.value;
 
-                //     try {
-                //       setIsloading(true)
-                //       await fetch(`http://localhost:3001/Blog/${params.id}`, {
-                //         method: "PATCH",
-                //         headers: {
-                //           "Content-Type": "application/json",
-                //         },
-                //         body: JSON.stringify({ title, content, author }),
-                //       })
-                //       setIsloading(false)
-                //       await fetch("http://localhost:3001/Blog")
-                //       router.push("/")
 
-                //     } catch (error) {
-                //       console.log(error);
-                //     }
+                        try {
 
-                //   }}
+                            const res = await fetch(`https://job.kunjappu.online/api/login/`, {
+                                method: "POST",
+                                headers: {
+                                    "Content-Type": "application/json",
+                                },
+                                body: JSON.stringify({ email, password }),
+                            })
+                            if (res.ok) {
+                                router.push("/")
+                            }
+                            else {
+                                alert('Invalid')
+                            }
+
+                        } catch (error) {
+                            console.log(error);
+                        }
+
+                    }}
                 >
                     <label className=" text-sm font-medium text-gray-500 font-serif">Username</label>
                     <input
                         className='w-full p-3 border-1 rounded-lg mb-6 font-mono'
                         aria-label='Username'
                         placeholder='Your Username'
-                        id="title"
-                        name="title"
+                        id="email"
+                        name="email"
                         defaultValue=""
                     />
 
@@ -47,9 +56,10 @@ const LoginPage = () => {
                         className='w-full p-3 border-1 rounded-lg  mb-6 font-mono'
                         aria-label='Password'
                         placeholder="your password....."
-                        id="content"
-                        name="content"
+                        id="password"
+                        name="password"
                         defaultValue=""
+
                     />
 
 

@@ -4,8 +4,10 @@ import Image from 'next/image'
 
 import { IoIosStar } from 'react-icons/io'
 import { IoBookmarkOutline } from 'react-icons/io5'
+import moment from 'moment'
 
 const JobCard = ({ job }: { job: Job }) => {
+
     return (
         <div className='w-full flex flex-col px-4 py-2 mb-3 border rounded-md'>
             <div className='flex flex-row justify-between '>
@@ -30,7 +32,7 @@ const JobCard = ({ job }: { job: Job }) => {
                     <h1>
                         Salary: {job.salary}
                     </h1>
-                    <h1>30+d</h1>
+                    <h1>          {moment(job.created_at).fromNow()}</h1>
                 </div>
             </div>
 

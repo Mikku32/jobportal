@@ -8,8 +8,21 @@ const Search = ({ job }: { job: Job }) => {
     return (
         <div className='flex flex-col border border-b-1 items-center  w-full h-[180px] px-7 py-4'>
             <div className='flex gap-1 items-center w-[50%]'>
-                <div className='bg-slate-50 rounded-l-3xl py-2 px-4  gap-2 flex items-center w-2/3 font-sans '> <MdSearch size={15} /> {job.title}</div>
-                <div className="bg-slate-50 rounded-r-3xl py-2 px-4  gap-2 flex items-center w-1/3 font-sans "> <IoLocationOutline size={15} /> {job.location}</div>
+                <div className='bg-slate-100 rounded-l-3xl py-2 px-4  gap-2 flex items-center w-2/3 font-sans '>
+                    <MdSearch size={15} />
+
+                    <input
+                        className='w-full bg-slate-100 focus:outline-none'
+                        defaultValue={job.title}
+                    />
+                </div>
+                <div className="bg-slate-100 rounded-r-3xl py-2 px-4  gap-2 flex items-center w-1/3 font-sans ">
+                    <IoLocationOutline size={15} />
+                    <input
+                        className='w-full bg-slate-100 focus:outline-none'
+                        defaultValue={job.location}
+                    />
+                </div>
             </div>
             <div className="flex flex-row font-semibold text-sm items-center text-green-600 mt-7 gap-2">
                 <ImPower size={15} />

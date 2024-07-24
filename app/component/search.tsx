@@ -1,4 +1,5 @@
 import React from 'react'
+import { BsStars } from 'react-icons/bs'
 import { ImPower } from 'react-icons/im'
 import { IoMdNotificationsOutline } from 'react-icons/io'
 import { IoLocationOutline } from 'react-icons/io5'
@@ -31,7 +32,7 @@ const Search = ({ job }: { job: Job }) => {
             <div className='flex flex-row relative w-full justify-center items-center '>
 
                 <div className='flex flex-row gap-4 mt-5 '>
-                    <div className='py-3 font-semibold hover:font-bold border-b-4 border-b-white hover:border-green-500 flex'> For you</div>
+                    <div className='py-3 font-semibold hover:font-bold border-b-4 border-b-white hover:border-green-500 flex items-center gap-2'><BsStars /> For you</div>
                     <div className='py-3 font-semibold hover:font-bold border-b-4 border-b-white hover:border-green-500'>Search</div>
                     <div className='py-3 font-semibold hover:font-bold border-b-4 border-b-white hover:border-green-500'>Your activity</div>
 

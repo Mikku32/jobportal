@@ -7,6 +7,9 @@ import { IoBookmarkOutline, IoMenu } from 'react-icons/io5'
 import { BsThreeDots } from 'react-icons/bs'
 import { ImPower } from 'react-icons/im'
 import { useState } from 'react'
+import { LiaStarSolid } from 'react-icons/lia'
+import { TbStarHalfFilled } from 'react-icons/tb'
+import { FaUserAstronaut } from 'react-icons/fa6'
 const JobDetail = ({ job }: { job: Job }) => {
 
     const [isExpanded, setisExpanded] = useState(false)
@@ -19,7 +22,7 @@ const JobDetail = ({ job }: { job: Job }) => {
         return text.substring(0, limit);
     };
     return (
-        <div className='w-[65%] p-4 px-8 border-2 rounded-md ml-3 overflow-y-scroll'>
+        <div className='w-[65%] p-4 px-8 border-2 rounded-md ml-3 overflow-y-scroll pb-6'>
             <div className='flex flex-row justify-between '>
                 <div className='flex flex-row gap-2 items-center'>
                     <div className='w-11 h-11 contain-content items-center justify-center rounded-full border-2 '>
@@ -44,7 +47,7 @@ const JobDetail = ({ job }: { job: Job }) => {
                     <div className='flex gap-2 items-center'>
                         <div className='rounded-lg bg-slate-100  text-black  p-2 ' ><BsThreeDots /></div>
                         <div className='rounded-lg bg-slate-100  text-black  p-2 '><IoBookmarkOutline /></div>
-                        <div className='rounded-lg bg-green-400 font-semibold   p-2 text-sm flex items-center gap-2 hover:shadow-lg hover:shadow-black '>
+                        <div className='rounded-lg bg-green-400 font-semibold   p-2 text-sm flex items-center gap-2 hover:shadow-lg  hover:shadow-black '>
                             <ImPower size={15} color='yellow' />
                             Easy Apply
                         </div>
@@ -84,7 +87,43 @@ const JobDetail = ({ job }: { job: Job }) => {
 
 
                 </div>
-                <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis laborum iusto corporis, quod eos maxime nihil alias ab voluptatibus dolores explicabo nisi tempore nesciunt inventore ratione quam dignissimos asperiores reprehenderit.</h1>
+                <div className="mt-3 py-3 border-b-2">
+                    <h1 className='font-semibold text-lg mb-5'>Netstratum Ratings</h1>
+
+                    <div className="flex flex-row w-full px-6 justify-between ">
+                        <div className='w-1/2 px-3'>
+                            <div className='flex  place-content-center gap-4  '>
+                                <h1 className='text-lg font-bold text-green-600'>4.2</h1>
+                                <div className='flex'>
+                                    <LiaStarSolid color='green' size={27} />
+                                    <LiaStarSolid color='green' size={27} />
+                                    <LiaStarSolid color='green' size={27} />
+                                    <LiaStarSolid color='green' size={27} />
+                                    <TbStarHalfFilled color='green' size={27} />
+                                </div>
+                            </div>
+                            <div>
+                                <div className="flex  justify-between gap-3 py-5 w-full">
+                                    <div className="flex flex-col items-center    w-1/3">
+                                        <div className="rounded-full h-16 w-16 flex items-center justify-center  border-8 border-black  text-sm font-semibold"> 100% </div>
+                                        <h1 className='text-sm text-center'>Recommend to a friend</h1>
+                                    </div>
+                                    <div className="flex flex-col items-center w-1/3 ">
+                                        <div className="rounded-full h-16 w-16 place-content-center  border-8 border-gray-300 p-3  text-sm font-semibold"> N/A </div>
+                                        <h1 className='text-sm'>Approve of CEO</h1>
+                                    </div>
+                                    <div className="flex flex-col items-center w-1/3">
+                                        <div className="rounded-full h-16 w-16 place-content-center  border-8 border-gray-300 p-3  text-sm font-semibold"> <FaUserAstronaut size={27} /> </div>
+                                        <h1 className='text-sm '>0 rating</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='w-1/2'>
+                            rating stars
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>

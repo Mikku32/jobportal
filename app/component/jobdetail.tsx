@@ -8,7 +8,7 @@ import { BsThreeDots } from 'react-icons/bs'
 import { ImPower } from 'react-icons/im'
 import { useState } from 'react'
 import { LiaStarSolid } from 'react-icons/lia'
-import { TbStarHalfFilled } from 'react-icons/tb'
+import { TbStar, TbStarHalfFilled } from 'react-icons/tb'
 import { FaUserAstronaut } from 'react-icons/fa6'
 const JobDetail = ({ job }: { job: Job }) => {
 
@@ -29,9 +29,9 @@ const JobDetail = ({ job }: { job: Job }) => {
                         <Image height={50} width={50} src={job.company.logo} alt='' />
 
                     </div>
-                    <div className=' text-xl font-semibold flex gap-1 items-center'>
+                    <div className=' text-xl font-semibold flex gap-2 items-center place-content-center'>
                         {job.company.name} 4.1
-                        <IoIosStar className='mb-1' size={12} />
+                        <IoIosStar className='mb-1' size={18} />
                     </div>
 
 
@@ -43,7 +43,7 @@ const JobDetail = ({ job }: { job: Job }) => {
 
             <div className="mt-2 py-3 ">
                 <div className='flex flex-row items-center justify-between'>
-                    <h1 className='font-bold text-3xl'>{job.title}</h1>
+                    <h1 className='font-bold text-2xl'>{job.title}</h1>
                     <div className='flex gap-2 items-center'>
                         <div className='rounded-lg bg-slate-100  text-black  p-2 ' ><BsThreeDots /></div>
                         <div className='rounded-lg bg-slate-100  text-black  p-2 '><IoBookmarkOutline /></div>
@@ -60,10 +60,10 @@ const JobDetail = ({ job }: { job: Job }) => {
                     <h1 className=' py-3 mb-9 font-sans'> {isExpanded ? job.description : truncateText(job.description, 200)}
                         <span> {job.description.length > 200 && (
                             <button
-                                className='text-green-600 font-semibold underline'
+                                className='text-green-800 font-semibold underline'
                                 onClick={toggleChange}
                             >
-                                {isExpanded ? 'See less ' : '...See more '}
+                                {isExpanded ? 'See less' : '.... See more'}
                             </button>
                         )}</span>
                     </h1>
@@ -73,24 +73,24 @@ const JobDetail = ({ job }: { job: Job }) => {
 
                     <div className='flex w-full'>
                         <div className='flex w-1/2 gap-24'><h1 className='font-semibold'>Size</h1><h1>1 - 50 Employees</h1></div>
-                        <div className='flex w-1/2 gap-24'><h1 className='font-semibold'>Founded</h1><h1>---</h1></div>
+                        <div className='flex w-1/2 gap-24'><h1 className='font-semibold'>Founded</h1><h1>2006</h1></div>
                     </div>
                     <div className='flex w-full'>
                         <div className='flex w-1/2 gap-24'><h1 className='font-semibold'>Type</h1><h1>onsite</h1></div>
-                        <div className='flex w-1/2 gap-24'><h1 className='font-semibold'>Revenue</h1><h1>---</h1></div>
+                        <div className='flex w-1/2 gap-24'><h1 className='font-semibold'>Revenue</h1><h1>Less than $1 million (USD)</h1></div>
 
                     </div>
                     <div className='flex w-full'>
                         <div className='flex w-1/2 gap-24'><h1 className='font-semibold'>Sector</h1><h1>---</h1></div>
-                        <div className='flex w-1/2 gap-24'><h1 className='font-semibold'>Industry</h1><h1>---</h1></div>
+                        <div className='flex w-1/2 gap-24'><h1 className='font-semibold'>Industry</h1><h1>Elctrical and Electronics</h1></div>
                     </div>
 
 
                 </div>
-                <div className="mt-3 py-3 border-b-2">
+                <div className="mt-3 py-3 ">
                     <h1 className='font-semibold text-lg mb-5'>Netstratum Ratings</h1>
 
-                    <div className="flex flex-row w-full px-6 justify-between ">
+                    <div className="flex flex-row w-full  justify-between ">
                         <div className='w-1/2 px-3'>
                             <div className='flex  place-content-center gap-4  '>
                                 <h1 className='text-lg font-bold text-green-600'>4.2</h1>
@@ -119,11 +119,77 @@ const JobDetail = ({ job }: { job: Job }) => {
                                 </div>
                             </div>
                         </div>
-                        <div className='w-1/2'>
-                            rating stars
+                        <div className='w-1/2 px-3 '>
+                            <div className='flex justify-between px-3 py-2'>
+                                <h1>Career opportunities </h1>
+                                <div className='flex  place-content-center gap-4  '>
+                                    <div className='flex'>
+                                        <LiaStarSolid color='black' size={18} />
+                                        <LiaStarSolid color='black' size={18} />
+                                        <LiaStarSolid color='black' size={18} />
+                                        <LiaStarSolid color='black' size={18} />
+                                        <TbStarHalfFilled color='black' size={18} />
+                                    </div>
+                                    <h1 className='text-sm font-bold'>4.5</h1>
+                                </div>
+                            </div>
+                            <div className='flex justify-between px-3 py-2'>
+                                <h1>Comp and Benefits </h1>
+                                <div className='flex  place-content-center gap-4  '>
+                                    <div className='flex'>
+                                        <LiaStarSolid color='black' size={18} />
+                                        <LiaStarSolid color='black' size={18} />
+                                        <LiaStarSolid color='black' size={18} />
+                                        <LiaStarSolid color='black' size={18} />
+                                        <TbStar color='black' size={18} />
+                                    </div>
+                                    <h1 className='text-sm font-bold'>4.0</h1>
+                                </div>
+                            </div>
+                            <div className='flex justify-between px-3 py-2'>
+                                <h1>Culture and values </h1>
+                                <div className='flex  place-content-center gap-4  '>
+                                    <div className='flex'>
+                                        <LiaStarSolid color='black' size={18} />
+                                        <LiaStarSolid color='black' size={18} />
+                                        <LiaStarSolid color='black' size={18} />
+                                        <TbStar color='black' size={18} />
+                                        <TbStar color='black' size={18} />
+                                    </div>
+                                    <h1 className='text-sm font-bold'>3.0</h1>
+                                </div>
+                            </div>
+                            <div className='flex justify-between px-3 py-2'>
+                                <h1>Senior management </h1>
+                                <div className='flex  place-content-center gap-4  '>
+                                    <div className='flex'>
+                                        <LiaStarSolid color='black' size={18} />
+                                        <LiaStarSolid color='black' size={18} />
+                                        <LiaStarSolid color='black' size={18} />
+                                        <LiaStarSolid color='black' size={18} />
+                                        <LiaStarSolid color='black' size={18} />
+                                    </div>
+                                    <h1 className='text-sm font-bold'>5.0</h1>
+                                </div>
+                            </div>
+                            <div className='flex justify-between px-3 py-2'>
+                                <h1>Work/Life Balance </h1>
+                                <div className='flex  place-content-center gap-4  '>
+                                    <div className='flex'>
+                                        <LiaStarSolid color='black' size={18} />
+                                        <LiaStarSolid color='black' size={18} />
+                                        <LiaStarSolid color='black' size={18} />
+                                        <LiaStarSolid color='black' size={18} />
+                                        <TbStarHalfFilled color='black' size={18} />
+                                    </div>
+                                    <h1 className='text-sm font-bold'>4.2</h1>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+
             </div>
 
         </div>

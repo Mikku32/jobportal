@@ -65,12 +65,14 @@ const LoginPage = () => {
 
                 </form>
 
-                <div className='flex justify-around w-full px-[40px] mt-3 items-center'>
+                <div className='flex justify-around w-[50%] px-[40px] bg-slate-300 rounded-md  mt-3 items-center'>
 
 
-                    <button form="login" type="submit" className='w-[40px]   bg-white'>
+                    <button form="login" type="submit" >
                         Login
-                    </button></div>
+                    </button>
+
+                </div>
             </div>
         </div>
     )
